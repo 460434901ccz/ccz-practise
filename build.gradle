@@ -1,0 +1,15 @@
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'checkstyle'
+apply plugin: 'findbugs'
+apply plugin: 'jdepend'
+apply plugin: 'pmd'
+
+repositories {
+	mavenLocal()
+//    maven('http://localhost:8081/nexus/content/repositories/central/')
+}
+ 
+dependencies {
+    testCompile 'junit:junit:4.+'
+}

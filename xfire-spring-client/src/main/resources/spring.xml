@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+        "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean  id ="exampleWS"  class ="org.codehaus.xfire.spring.remoting.XFireClientFactoryBean">
+        <property name ="serviceClass">
+            <value>ccz.practise.xfire.spring.server.example.ExampleWSPortType</value>
+        </property>
+        <property name ="wsdlDocumentUrl">
+            <value>http://localhost:8080/gdicws2/service/ExampleWS?wsdl</value>
+        </property>
+    </bean>
+
+
+</beans>
