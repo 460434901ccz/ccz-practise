@@ -1,29 +1,67 @@
-<mxfile host="app.diagrams.net" modified="2021-11-18T07:07:31.169Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="Tu6BcKdCAYKeBxfkrUjf" version="13.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-18T07:15:14.618Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="5d1cFm4yDUiE9NjG8jSa" version="13.7.3" type="github">
   <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
-    <mxGraphModel dx="1368" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+    <mxGraphModel dx="943" dy="534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="FB7n5PxvgqieLS6MJgnv-41" value="云管" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="560" y="50" width="80" height="80" as="geometry" />
+          <mxGeometry x="80" y="40" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="FB7n5PxvgqieLS6MJgnv-42" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="FB7n5PxvgqieLS6MJgnv-41" target="FB7n5PxvgqieLS6MJgnv-43">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="560" y="420" as="sourcePoint" />
             <mxPoint x="601" y="190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="601" y="80" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="FB7n5PxvgqieLS6MJgnv-43" value="ProxyUpdate" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="541" y="160" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FB7n5PxvgqieLS6MJgnv-44" value="asmc1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="310" y="290" width="80" height="80" as="geometry" />
+          <mxGeometry x="360" y="290" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="FB7n5PxvgqieLS6MJgnv-45" value="asmc2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="561" y="290" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="FB7n5PxvgqieLS6MJgnv-46" value="asmc3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="800" y="290" width="80" height="80" as="geometry" />
+          <mxGeometry x="760" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FB7n5PxvgqieLS6MJgnv-48" value="检测proxyUpdate的annotation是否有asmcIp:&lt;br&gt;1. 如果没有，则将本IP写入&lt;br&gt;2. 如果有，则检查该IP对应的asmc pod是否正常运行，若该IP对应的asmc pod正常运行，则放弃任务；否则，尝试将本IP更新到proxyUpdate" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="456" y="530" width="290" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="FB7n5PxvgqieLS6MJgnv-49" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="FB7n5PxvgqieLS6MJgnv-44">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="200" as="sourcePoint" />
+            <mxPoint x="611" y="170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FB7n5PxvgqieLS6MJgnv-50" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FB7n5PxvgqieLS6MJgnv-43" target="FB7n5PxvgqieLS6MJgnv-45">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="210" as="sourcePoint" />
+            <mxPoint x="410" y="300" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FB7n5PxvgqieLS6MJgnv-51" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="661" y="201" as="sourcePoint" />
+            <mxPoint x="800" y="301" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="800" y="201" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FB7n5PxvgqieLS6MJgnv-52" value="" style="endArrow=classic;html=1;entryX=0.451;entryY=-0.033;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="FB7n5PxvgqieLS6MJgnv-44" target="FB7n5PxvgqieLS6MJgnv-48">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610.9999999999998" y="230" as="sourcePoint" />
+            <mxPoint x="610.9999999999998" y="300" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
