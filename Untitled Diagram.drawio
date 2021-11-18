@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-11-18T08:09:23.220Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="KpueJUUc_Tk9Ro5vn2Jt" version="15.8.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-18T08:30:09.419Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="5hbLdxJFhIDKoa6vv7e5" version="15.8.2" type="github">
   <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
-    <mxGraphModel dx="1109" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1109" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -201,7 +201,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="rX8UmJ0MvaBs6cS46ier-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rX8UmJ0MvaBs6cS46ier-17">
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rX8UmJ0MvaBs6cS46ier-17" target="rX8UmJ0MvaBs6cS46ier-49">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="629.9999999999998" y="1348" as="targetPoint" />
           </mxGeometry>
@@ -227,11 +227,83 @@
         <mxCell id="rX8UmJ0MvaBs6cS46ier-19" value="停止当前正在运行更新或回滚动作" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1060" y="1331" width="105" height="32" as="geometry" />
         </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rX8UmJ0MvaBs6cS46ier-26" target="rX8UmJ0MvaBs6cS46ier-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rX8UmJ0MvaBs6cS46ier-26" value="更新" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="802.5" y="1480" width="105" height="32" as="geometry" />
         </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rX8UmJ0MvaBs6cS46ier-29" target="rX8UmJ0MvaBs6cS46ier-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="rX8UmJ0MvaBs6cS46ier-29" value="根据ProxyUpdate的namespaces和labels找到需要更新的Pods，如果namespace为asm，则会在全局找pods" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="796.25" y="1560" width="163.75" height="70" as="geometry" />
+          <mxGeometry x="773.13" y="1560" width="163.75" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rX8UmJ0MvaBs6cS46ier-31" target="rX8UmJ0MvaBs6cS46ier-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-31" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt ; text-align: left ; font-family: &amp;#34;calibri&amp;#34; ; font-size: 10.5pt&quot;&gt;&lt;span style=&quot;font-size: 9pt&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;从每个&lt;/font&gt;pod&lt;font face=&quot;宋体&quot;&gt;的&lt;/font&gt;&lt;font face=&quot;Calibri&quot;&gt;ownerReference&lt;/font&gt;&lt;font face=&quot;宋体&quot;&gt;中循环获取Owner链&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 9pt&quot;&gt;&lt;/span&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="766.56" y="1670" width="176.87" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rX8UmJ0MvaBs6cS46ier-32" target="rX8UmJ0MvaBs6cS46ier-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-32" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt ; text-align: left ; font-family: &amp;#34;calibri&amp;#34; ; font-size: 10.5pt&quot;&gt;&lt;span style=&quot;font-size: 9pt&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;更改owners&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 9pt&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;的&lt;/font&gt;annotation&lt;/span&gt;&lt;span style=&quot;font-size: 9pt&quot;&gt;&lt;/span&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="795" y="1760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rX8UmJ0MvaBs6cS46ier-33" target="rX8UmJ0MvaBs6cS46ier-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-33" value="等待owners更改生效" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="795" y="1860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rX8UmJ0MvaBs6cS46ier-36" target="rX8UmJ0MvaBs6cS46ier-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-36" value="分批次更新pod的annotation和image；等待该批次的pod更新，直到不可用状态的pod不高于“最大不可用”比例，再开始下一批次更新" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="777.49" y="1960" width="154.99" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rX8UmJ0MvaBs6cS46ier-37" target="rX8UmJ0MvaBs6cS46ier-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-37" value="等待所有pod更新成功" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="767.49" y="2110" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="rX8UmJ0MvaBs6cS46ier-38" target="rX8UmJ0MvaBs6cS46ier-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-38" value="结束任务" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810.01" y="2220" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-39" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="839.99" y="2300" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-49" value="回滚" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1331" width="105" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-50" value="停止更新" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1410" width="105" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-51" value="1.将未更新的Pod更改状态为“无需回滚”；&lt;br&gt;2.将状态为“更新成功”或“等待更新成功”的owner和pod放入待回滚列表" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1510" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-52" value="回滚owner的annotation到旧版本" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-53" value="等待owner回滚成功" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1730" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-54" value="分批次回滚pod的annotation和image；等待该批次的pod更新，直到不可用状态的pod不高于“最大不可用”比例，再开始下一批次回滚" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1830" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-55" value="等待所有pod回滚成功" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="387.5" y="1990" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-56" value="结束任务" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="2140" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rX8UmJ0MvaBs6cS46ier-57" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="475" y="2240" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
