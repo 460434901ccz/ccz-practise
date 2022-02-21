@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-21T03:18:16.106Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="0Q1BVlW11bm9oEritEs7" version="16.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-21T03:47:35.635Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="yfByz1EGrhHSqvaZDMlU" version="16.6.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1109" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -10,7 +10,7 @@
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt ; font-family: &amp;#34;times new roman&amp;#34; ; font-size: 10.5pt&quot;&gt;istio升级了版本会造成crd资源的增删改，这时需要在&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt ; font-family: &amp;#34;times new roman&amp;#34; ; font-size: 10.5pt&quot;&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-size: 12pt&quot;&gt;/cmd/generate/generate.go&lt;/span&gt;&lt;span style=&quot;font-size: 12pt&quot;&gt;&amp;nbsp;-&amp;gt; &lt;/span&gt;&lt;span style=&quot;font-size: 12pt&quot;&gt;type Schema struct&lt;/span&gt;&lt;span style=&quot;font-size: 12pt&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;中增删&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;span style=&quot;font-size: 12pt&quot;&gt;相对应的crd类型的go代码中的类型；如1.8版本比1.6版本多了WorkGroup，那么就需要在Schema中增加V1Alpha3WorkloadGroup networkingv1alpha3.WorkloadGroup&lt;/span&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="490" y="20" width="490" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-4" value="No" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="WIyWlLk6GJQsqaUBKTNV-10" edge="1">
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-4" value="No" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;entryX=0.442;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-6" target="n0M99M0IcavylShIqUFS-1" edge="1">
           <mxGeometry y="20" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -20,57 +20,44 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-6" value="新增的&lt;br&gt;crd类型中，是否哪一层类型中包含接口类型的属性，如DestinationRule/spec/trafficPolicy/lobalancer对应的类型LoadBalancerSettings，其中的属性LbPolicy的类型就是一个接口类型isLoadBalancerSettings_LbPolicy" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="545" y="180" width="380" height="160" as="geometry" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-6" value="新增的&lt;br&gt;crd类型中，是否哪一层类型中包含接口类型的属性。&lt;br&gt;&lt;br&gt;" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="634.37" y="190" width="201.25" height="110" as="geometry" />
         </mxCell>
         <mxCell id="rdsL-xD0S33hwiKFE4rl-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-7" target="WIyWlLk6GJQsqaUBKTNV-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt ; font-family: &amp;#34;times new roman&amp;#34; ; font-size: 10.5pt&quot;&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;font-size: 12pt&quot;&gt;/cmd/generate/generate.go&lt;/span&gt;&lt;span style=&quot;font-size: 12pt&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span style=&quot;font-size: 12pt&quot;&gt;type Schema struct&lt;/span&gt;&lt;span style=&quot;font-size: 12pt&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;中添加该接口类型的实现类，如现有的Simple networking.&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;LoadBalancerSettings_Simple，就是实现了isLoadBalancer_LbPolicy&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fontFamily=宋体;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="190" y="182.5" width="250" height="155" as="geometry" />
+          <mxGeometry x="190" y="207.5" width="250" height="155" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-8" value="Yes" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-10" target="rdsL-xD0S33hwiKFE4rl-9" edge="1">
-          <mxGeometry x="0.3333" y="20" relative="1" as="geometry">
-            <mxPoint as="offset" />
-            <mxPoint x="590" y="610" as="sourcePoint" />
-            <mxPoint x="570" y="810" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="950" y="575" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-10" value="新增的&lt;br&gt;crd类型中，是否哪一层类型中包含接口类型的属性注释中有protobuf:&quot;enum=xxx&quot;字样。&lt;br&gt;&lt;br&gt;" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="557.87" y="532" width="354.25" height="105" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-10" value="新增加的类型中，是否在某一层级的属性注释中有protobuf:&quot;enum=xxx&quot;字样" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="605" y="500" width="260" height="150" as="geometry" />
-        </mxCell>
-        <mxCell id="rdsL-xD0S33hwiKFE4rl-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-11" target="WIyWlLk6GJQsqaUBKTNV-10" edge="1">
+        <mxCell id="rdsL-xD0S33hwiKFE4rl-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-11" target="n0M99M0IcavylShIqUFS-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-11" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt; font-family: calibri; font-size: 10.5pt;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;classes-with-interface-fields.yml加入该类型及相关属性，可参考该文件中的me.snowdrop.istio.api.networking.&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt; font-family: calibri; font-size: 10.5pt;&quot;&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;v1beta1.LoadBalancerSettings的配置&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="197.5" y="530" width="235" height="90" as="geometry" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-11" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt ; font-family: &amp;#34;calibri&amp;#34; ; font-size: 10.5pt&quot;&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;classes-with-interface-fields.yml加入该类型及相关属性，后面会根据这个配置生成对应的java接口内部类。可参考该文件中的me.snowdrop.istio.api.networking.&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt ; font-family: &amp;#34;calibri&amp;#34; ; font-size: 10.5pt&quot;&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;v1beta1.LoadBalancerSettings的配置&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="197.5" y="420" width="235" height="90" as="geometry" />
         </mxCell>
         <mxCell id="rdsL-xD0S33hwiKFE4rl-1" value="该Schema中声明了哪些需要被生成Java类的istio的crd类型（crd类型是最顶层的类型，除非声明，否则无法被扫描到；每一个crd类型下的每个属性类型，也会被生成相对应的java类，这些都在处理过程中被扫描到，自动生成java类）&lt;br&gt;&lt;br&gt;处理到某一个类型是由接口实现的话，也需要在这个Schema声明一下，参考该Schema里面有个networking.LoadBalancerSettings_Simple" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="1030" y="20" width="300" height="160" as="geometry" />
+          <mxGeometry x="1030" y="20" width="380" height="130" as="geometry" />
         </mxCell>
         <mxCell id="rdsL-xD0S33hwiKFE4rl-6" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt&quot;&gt;&lt;font face=&quot;times new roman&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;istio-client/src/main/java/me/snowdrop/istio/client/IstioDsl.java、DefaultIstioClient.java这两个类增加该类型的调用接口，供istioClient对这个类型进行增删改查调用，可参考已存在的WorkloadGroup等类型复制粘贴，该一下类型名即可&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fontFamily=宋体;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="1080" y="410" width="390" height="110" as="geometry" />
+          <mxGeometry x="1060" y="745" width="390" height="110" as="geometry" />
         </mxCell>
         <mxCell id="rdsL-xD0S33hwiKFE4rl-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rdsL-xD0S33hwiKFE4rl-9" target="rdsL-xD0S33hwiKFE4rl-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rdsL-xD0S33hwiKFE4rl-9" value="generate/generate.go -&amp;gt; func main() -&amp;gt; enumMap增加对应的key-value；key为istio代码中对应的enum类型，value为istio-model/src/main/java中的java Enum类型" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="860" y="620" width="180" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="rdsL-xD0S33hwiKFE4rl-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rdsL-xD0S33hwiKFE4rl-10" target="rdsL-xD0S33hwiKFE4rl-12" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="rdsL-xD0S33hwiKFE4rl-9" value="generate/generate.go -&amp;gt; func main() -&amp;gt; enumMap增加对应的key-value；key为istio代码中对应属性注释的enum类型，value为istio-model/src/main/java中的java Enum类型。如" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="260" y="540" width="180" height="120" as="geometry" />
         </mxCell>
         <mxCell id="rdsL-xD0S33hwiKFE4rl-10" value="在istio-model/src/main/java中增加相应的java Enum类型" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="860" y="780" width="180" height="60" as="geometry" />
+          <mxGeometry x="260" y="770" width="180" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rdsL-xD0S33hwiKFE4rl-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rdsL-xD0S33hwiKFE4rl-12" target="rdsL-xD0S33hwiKFE4rl-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="rdsL-xD0S33hwiKFE4rl-12" value="make clean" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="660" y="780" width="120" height="60" as="geometry" />
+          <mxGeometry x="675" y="800" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rdsL-xD0S33hwiKFE4rl-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="rdsL-xD0S33hwiKFE4rl-13" target="rdsL-xD0S33hwiKFE4rl-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -93,15 +80,17 @@
         <mxCell id="rdsL-xD0S33hwiKFE4rl-19" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt ; text-align: justify ; font-family: &amp;#34;calibri&amp;#34; ; font-size: 10.5pt&quot;&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;make &lt;/span&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;build&lt;/span&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;&lt;/span&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="660" y="1380" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rdsL-xD0S33hwiKFE4rl-25" value="No" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;entryX=0.506;entryY=-0.06;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="rdsL-xD0S33hwiKFE4rl-12" edge="1">
-          <mxGeometry y="20" relative="1" as="geometry">
-            <mxPoint as="offset" />
-            <mxPoint x="719.7" y="650" as="sourcePoint" />
-            <mxPoint x="719.7" y="720" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="rdsL-xD0S33hwiKFE4rl-26" value="本项目通过扫描istio源码目录，获得istio的crd对应的go类型（从crd本身类型到每一层属性的类型），转换成对应的java类型。然后再用项目中的IstioClient，对crd资源进行增删改查" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="130" y="20" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n0M99M0IcavylShIqUFS-1" value="继续" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="682" y="435" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n0M99M0IcavylShIqUFS-4" value="&lt;span&gt;如DestinationRule/spec/trafficPolicy/lobalancer对应的类型LoadBalancerSettings，其中的属性LbPolicy的类型就是一个接口类型isLoadBalancerSettings_LbPolicy。这个接口类型也应该转换成java的接口类型，但需要在&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;calibri&amp;#34; ; font-size: 14px ; text-align: left&quot;&gt;classes-with-interface-fields.yml中声明一下&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1030" y="200" width="390" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="n0M99M0IcavylShIqUFS-5" value="&lt;span&gt;如DestinationRule/spec/trafficPolicy/lobalancer对应的类型LoadBalancerSettings/lbPolicy接口类的一种类型LoadbalancerSettings_Simple中的Simple属性，就有这样的注释`protobuf:&quot;enum=istio.networking.v1alpha3.LoadBalancerSettings_SimpleLB&quot;`；&lt;br&gt;&lt;/span&gt;&lt;span&gt;这是表明了这个SimpleLB可以用java的Enum来表达&lt;br&gt;&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1060" y="510" width="530" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
